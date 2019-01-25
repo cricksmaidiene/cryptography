@@ -31,7 +31,7 @@ class AffineCipher{
 				mulciphertext+=' ';
 		}	
 		for(int i=0; i<mulciphertext.length(); i++){
-			char current = plaintext.charAt(i);
+			char current = mulciphertext.charAt(i);
 			if(current!=' ')
 				ciphertext+=Character.toString((char)((((((int)(mulciphertext.charAt(i)))-65)+key2)%26)+65));
 			else if(Character.isDigit(current))
